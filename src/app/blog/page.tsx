@@ -1,4 +1,10 @@
-import { resolve } from "path";
+import type { Metadata } from "next";
+import "../globals.css";
+
+export const metadata: Metadata = {
+  title: "ブログ記事一覧",
+  description: "ブログ記事を一覧で表示しています。",
+};
 
 // ダミーデータ
 const articles = [
