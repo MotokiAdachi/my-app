@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Params) {
   };
 }
 
-export default async function page({ params }: Params) {
+export default async function BlogPage({ params }: Params) {
   const { id } = await params;
   return <div>ブログID: {id}</div>;
 }

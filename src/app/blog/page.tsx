@@ -28,7 +28,7 @@ async function fetchArticles() {
   return articles;
 }
 
-export default async function page() {
+export default async function BlogListPage() {
   const articles = await fetchArticles();
   return (
     <div>
