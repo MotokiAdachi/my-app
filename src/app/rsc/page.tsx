@@ -1,5 +1,6 @@
 import React from "react";
-import { useState } from "react";
+import ClientComponent from "@/components/ClientComponent";
+import Link from "next/link";
 
 export default function ServerComponent() {
   console.log("Server");
@@ -9,7 +10,8 @@ export default function ServerComponent() {
   return (
     <div>
       サーバー
-      {/* <button onClick={() => setCount(count + 1)}>Count: {count}</button> */}
+      <ClientComponent />
+      <Link href="/about">About</Link>
     </div>
   );
 }
